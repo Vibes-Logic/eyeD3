@@ -392,6 +392,17 @@ class Tag(core.Tag):
 
     bpm = property(_getBpm, _setBpm)
 
+    def _getKey(self):
+        key = None
+        if frames.KEY_FID in self.frame_set:
+            return self.frame_set[frames.KEY_FID][0].text or ""            
+
+    def _setKey(self, bpm):
+        assert(key != "")
+        self.setTextFrame(frames.KEY_FID, str(key))
+
+    key = property(_getKey, _setKey)
+
     @property
     def play_count(self):
         if frames.PLAYCOUNT_FID in self.frame_set:

@@ -43,6 +43,7 @@ IMAGE_FID          = b"APIC"                                            # noqa
 USERURL_FID        = b"WXXX"                                            # noqa
 PLAYCOUNT_FID      = b"PCNT"                                            # noqa
 BPM_FID            = b"TBPM"                                            # noqa
+KEY_FID            = b"TKEY"                                            # noqa
 PUBLISHER_FID      = b"TPUB"                                            # noqa
 CDID_FID           = b"MCDI"                                            # noqa
 PRIVATE_FID        = b"PRIV"                                            # noqa
